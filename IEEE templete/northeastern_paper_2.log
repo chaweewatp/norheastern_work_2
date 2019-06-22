@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 JUN 2019 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 JUN 2019 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,38 +387,68 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 49.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./Introduction.tex) (./Formulation.tex
-./Formulation.tex:40: Missing $ inserted.
+) (./Introduction.tex) (./Literature.tex) (./Formulation.tex <images/conceptual_methodology.png, id=1, 303.1325pt x 639.38875pt>
+File: images/conceptual_methodology.png Graphic file (type png)
+
+<use images/conceptual_methodology.png>
+Package pdftex.def Info: images/conceptual_methodology.png used on input line 5.
+(pdftex.def)             Requested size: 75.78293pt x 159.84679pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+./Formulation.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40 
+l.44 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./Formulation.tex:40: Display math should end with $$.
+./Formulation.tex:44: Display math should end with $$.
 <to be read again> 
                    \par 
-l.40 
+l.44 
      
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-./Formulation.tex:47: Missing $ inserted.
+./Formulation.tex:51: Missing $ inserted.
 <inserted text> 
                 $
-l.47 
+l.51 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./Formulation.tex:47: Display math should end with $$.
+./Formulation.tex:51: Display math should end with $$.
 <to be read again> 
                    \par 
-l.47 
+l.51 
      
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
+
+) (./results.tex <images/four_bus_system.png, id=17, 293.095pt x 423.5825pt>
+File: images/four_bus_system.png Graphic file (type png)
+ <use images/four_bus_system.png>
+Package pdftex.def Info: images/four_bus_system.png used on input line 11.
+(pdftex.def)             Requested size: 73.27356pt x 105.89536pt.
+ <images/CIGRE_network.png, id=18, 770.88pt x 734.745pt>
+File: images/CIGRE_network.png Graphic file (type png)
+ <use images/CIGRE_network.png>
+Package pdftex.def Info: images/CIGRE_network.png used on input line 32.
+(pdftex.def)             Requested size: 192.71953pt x 183.68579pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./References.tex
 Missing character: There is no ‚ in font ptmr7t!
@@ -427,6 +457,34 @@ Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
+ [2 <./images/conceptual_methodology.png> <./images/four_bus_system.png>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
 )
 
 ** Conference Paper **
@@ -440,40 +498,37 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 
-./northeastern_paper_2.tex:303: LaTeX Error: \begin{equation} on input line 43 ended by \end{document}.
+./northeastern_paper_2.tex:295: LaTeX Error: \begin{equation} on input line 47 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.303 \end{document}
+l.295 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] (./northeastern_paper_2.aux) )
+[3 <./images/CIGRE_network.png>] (./northeastern_paper_2.aux) )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 43 (\begingroup)
-### semi simple group (level 1) entered at line 36 (\begingroup)
+### semi simple group (level 2) entered at line 47 (\begingroup)
+### semi simple group (level 1) entered at line 40 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4458 strings out of 492995
- 65211 string characters out of 6132704
- 134056 words of memory out of 5000000
- 7940 multiletter control sequences out of 15000+600000
- 40038 words of font info for 87 fonts, out of 8000000 for 9000
+ 4515 strings out of 492995
+ 66036 string characters out of 6132704
+ 135155 words of memory out of 5000000
+ 7982 multiletter control sequences out of 15000+600000
+ 43950 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,35p,578b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on northeastern_paper_2.pdf (1 page, 113521 bytes).
+Output written on northeastern_paper_2.pdf (3 pages, 443132 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
