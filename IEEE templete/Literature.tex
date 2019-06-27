@@ -1,19 +1,40 @@
 \section{Literature reviews}
 
 \subsection{Applications of State estimation in power system}
+
+
+
 State estimation on distribution power system is reviewed in \cite{b9}.
 
+State estimation provides the optimum estimate of power system state based on received measurement units and the knowledge of network modeling. The measurement units may include as follows:
+\begin{itemize}
+  \item power injection (real/reactive),
+  \item power flow (real/reactive),
+  \item bus voltage magnitude,
+  \item phase angle,
+  \item line current magnitude,
+  \item current injection magnitude.
+\end{itemize}
+
 State Estimation provides various benefits for power system analysis as follows:
-\subsubsection{Real time mornitoring} for power system in transmission and distribution levels~\cite{b5}. The Advance Meter infrastructure (AMI) data are fed into SE to real-time mornitor distribution power system in\cite{b7}. It improved the accuracy comparing to pseudo measurment based on historical load.
 
-\subsubsection{Load allocation} in distribution power system. SE assigns active and reactive power values to bus downstream\cite{b6}. Class curves and individual average demand of clients improved accuracy of load allocation\cite{b4}.  The data from AMR system, which are used as the pseudo-measurements, was used to estimate load on the distribution transformers.\cite{b5}.
+\subsubsection{Real time mornitoring}
 
-\subsubsection{Bad data analysis} in several real application, it happens that some flow measurement has no sign or the sign is wrong.
+For power system in transmission and distribution levels~\cite{b5}. The Advance Meter infrastructure (AMI) data are fed into SE to real-time mornitor distribution power system in\cite{b7}. It improved the accuracy comparing to pseudo measurment based on historical load.
+
+\subsubsection{Load allocation}
+In distribution power system, SE assigns active and reactive power values to bus downstream\cite{b6}. Class curves and individual average demand of clients improved accuracy of load allocation\cite{b4}.  The data from AMR system, which are used as the pseudo-measurements, was used to estimate load on the distribution transformers.\cite{b5}.
+
+\subsubsection{Bad data analysis}
+
+In several real application, it happens that some flow measurement has no sign or the sign is wrong.
 A re-weighting technique was used to reduced the weights association to these measurements\cite{b6}.
 It also could helps to treat of power flow with erroneous sign.
 Futhurmore, SE was implemented in cyber attack events~\cite{b10} on power system states. A detection false data injection method is proposed in \cite{b8}.
 
-\subsubsection{Topology indentification} the status of branches and switches are indentified in\cite{b6}.
+\subsubsection{Topology indentification}
+
+the status of branches and switches are indentified in\cite{b6}.
 
 
 \subsection{previous solar PV detection techniques}
@@ -24,4 +45,14 @@ The big data characterization of smart grids and two-layer dynamuc optimal synch
 The utility data based on random matrix therory (RMT) are used in detection and estimation of invisible solar PV in real case in China in\cite{b14}.
 
 \subsection{Contributions}
-This paper proposed method which identify location and estimation solar PV installation capacity at invisible site.
+Many researchers have studied the detection and estimation location of invisible solar PV installation~\cite{b11}~\cite{b14}.
+These study depended on smart meter data, data set of solar PV generation, as well as historical demand of customer in each load.
+This paper proposed method which identify location using state estimation and correlation techniques and estimate the installation capacity using change point method of invisible solar PV site.
+The require data are measured solar irradiation data, the measurement in distribution system.
+The proposed method consists of four steps:
+\begin{itemize}
+  \item collect solar irradiation, measurement data
+  \item allocate power demend in each buses, nodes.
+  \item indentify invisible solar PV site
+  \item estimate solar PV site's installation capacity
+\end{itemize}

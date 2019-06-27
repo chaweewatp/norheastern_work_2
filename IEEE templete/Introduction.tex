@@ -1,15 +1,33 @@
 \section{Introduction}
 
-Increasing of solar PV.
 
-State estimation provides the optimum estimate of power system state based on received measurement units and the knowledge of network modeling. The measurement units may include as follows:
-\begin{itemize}
-  \item power injection (real/reactive),
-  \item power flow (real/reactive),
-  \item bus voltage magnitude,
-  \item phase angle,
-  \item line current magnitude,
-  \item current injection magnitude.
-\end{itemize}
+Sixty years ago, the price of solar panels was astronomical.  The price was over 1,000 US dollars per watt in today's money with 1 percent efficiency~\cite{b18}.
+As the cost continues to drop, solar panel systems are becoming much more viable for the average household.
+Today's price is less than 2.8 US dollars per watt for solar panel system including solar module, inverter, wiring hardware, labor cost, and maintenance cost~\cite{b19}.
+As result of exponentially acceralate increasing in number of globally solar PV integration, especailly in residential sector.
 
-In this paper we used Bayesian, SVM techniques to detect invisible solar PV generation.
+
+Many researchers have studied the impacts and risks of PV on distribution systems \cite{b20}-~\cite{b25}.
+However, the detection and monitoring of residential PV systems has not been the focus of the studies and related research.
+
+Recently, the highest penetration of solar PV, recognized a large number of unauthorized solar PV installation \cite{b26}.
+Unauthorized solar PV installation creates safety risks and lack of visibility may result in incorrect planning, and operation, including over-voltage, back-feeding.
+Futhermore, in worst case scenario, it may damange system equipment such as transformers, voltage regulators, as well as customer applicants \cite{b15}, \cite{b16}.
+In previous studies, there are various reasons for unauthorized or incorrectly registered PV system:
+a) owner decided not to apply for a permit to avoid fees \cite{b17},
+b) regulations were required after the system was installed,
+c) lack of awareness by the owner of diverse permitting rules,
+d) difference rules depending on size and type of PV installation can make the owners believe they do not need a permit
+e) change in property ownership including transfer,
+f) multiple system installed or future iaddition at the same premise,
+g) incorrect third party handling of the permit appication,
+h) data entry and data maintenance errors.
+
+
+
+
+
+The rest of the paper is structured as follows: Section II reviews related research on state estimation application for power system and previous detection and estimation techniques on invisible solar PV site.
+Section III formulates the mathenatic model of measurement data as well as the structure of proposed method.
+Section IV shows the results of proposed method on test cases.
+Section V conclueds the paper and dicusses future research oppotunities on PV system detection and estimation.

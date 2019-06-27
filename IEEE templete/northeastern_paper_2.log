@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 JUN 2019 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 JUN 2019 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,20 +387,19 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 49.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./Introduction.tex) (./Literature.tex) (./Formulation.tex <images/conceptual_methodology.png, id=1, 303.1325pt x 639.38875pt>
-File: images/conceptual_methodology.png Graphic file (type png)
+) (./Introduction.tex) (./Literature.tex [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-<use images/conceptual_methodology.png>
+
+]) (./Formulation.tex
+<images/conceptual_methodology.png, id=11, 303.1325pt x 639.38875pt>
+File: images/conceptual_methodology.png Graphic file (type png)
+ <use images/conceptual_methodology.png>
 Package pdftex.def Info: images/conceptual_methodology.png used on input line 5.
-(pdftex.def)             Requested size: 75.78293pt x 159.84679pt.
+(pdftex.def)             Requested size: 151.56587pt x 319.69359pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
 ./Formulation.tex:44: Missing $ inserted.
 <inserted text> 
                 $
@@ -433,15 +432,19 @@ l.51
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-) (./results.tex <images/four_bus_system.png, id=17, 293.095pt x 423.5825pt>
+[2 <./images/conceptual_methodology.png>]) (./results.tex <images/four_bus_system.png, id=24, 293.095pt x 423.5825pt>
 File: images/four_bus_system.png Graphic file (type png)
  <use images/four_bus_system.png>
-Package pdftex.def Info: images/four_bus_system.png used on input line 11.
-(pdftex.def)             Requested size: 73.27356pt x 105.89536pt.
- <images/CIGRE_network.png, id=18, 770.88pt x 734.745pt>
+Package pdftex.def Info: images/four_bus_system.png used on input line 13.
+(pdftex.def)             Requested size: 146.54713pt x 211.79073pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/CIGRE_network.png, id=25, 770.88pt x 734.745pt>
 File: images/CIGRE_network.png Graphic file (type png)
  <use images/CIGRE_network.png>
-Package pdftex.def Info: images/CIGRE_network.png used on input line 32.
+Package pdftex.def Info: images/CIGRE_network.png used on input line 39.
 (pdftex.def)             Requested size: 192.71953pt x 183.68579pt.
 
 
@@ -451,13 +454,109 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./References.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[]\OT1/ptm/m/n/8 https://www.theguardian.com/sustainable-business/2016/jan/31/solar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+[]\OT1/ptm/m/n/8 https://blog.pickmysolar.com/the-price-of-a-solar-panel-system-over-
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no à in font ptmr7t!
+Missing character: There is no û in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no à in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 2096) in paragraph at lines 10--11
+[]\OT1/ptm/m/n/8 P. Fair-ley. (Jan. 2015). Hawaii s So-lar Push Strains the Grid.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+\OT1/ptm/m/n/8 [on-line]. Avail-able: http://www.technologyreview.com/news/534266/
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 11--12
+\OT1/ptm/m/n/8 tho-rized PV Sys-tems. [On-line]. Avail-able: http://khon2.com/2014/
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+[3 <./images/four_bus_system.png> <./images/CIGRE_network.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\OT1/ptm/m/n/8 https://www.snopes.com/fact-check/is-it-illegal-florida-power-home-
+ []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [2 <./images/conceptual_methodology.png> <./images/four_bus_system.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -510,25 +609,27 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3 <./images/CIGRE_network.png>] (./northeastern_paper_2.aux) )
+[4
+
+] (./northeastern_paper_2.aux) )
 (\end occurred inside a group at level 2)
 
 ### semi simple group (level 2) entered at line 47 (\begingroup)
 ### semi simple group (level 1) entered at line 40 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4515 strings out of 492995
- 66036 string characters out of 6132704
- 135155 words of memory out of 5000000
- 7982 multiletter control sequences out of 15000+600000
+ 4527 strings out of 492995
+ 66096 string characters out of 6132704
+ 135203 words of memory out of 5000000
+ 7994 multiletter control sequences out of 15000+600000
  43950 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,35p,578b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on northeastern_paper_2.pdf (3 pages, 443132 bytes).
+Output written on northeastern_paper_2.pdf (4 pages, 447392 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
