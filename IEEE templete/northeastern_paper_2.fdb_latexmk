@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1561233905 "northeastern_paper_2.tex" "northeastern_paper_2.pdf" "northeastern_paper_2" 1561233906
+["pdflatex"] 1562457911 "northeastern_paper_2.tex" "northeastern_paper_2.pdf" "northeastern_paper_2" 1562457912
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1480098689 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -88,19 +88,19 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "Formulation.tex" 1561164044 3271 ae726ba238d5cd0d94fce3637c4b5232 ""
+  "Formulation.tex" 1562457902 4072 f224d3331cf5d442529d4967ba5dd0e3 ""
   "IEEEtran.cls" 1440654524 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "Introduction.tex" 1561233902 2416 b0df5cf9d93fff7e26bb3c96487113e2 ""
-  "Literature.tex" 1561233899 3809 2a6abb7935affefee4523ef073821d63 ""
-  "References.tex" 1561232597 4783 6b0fee51697df7b1c370eff79541de1b ""
+  "Literature.tex" 1562456985 4045 bbc7c79b370fb6a37be97a0041dd3d03 ""
+  "References.tex" 1562456743 4967 d8633b17b8ca9488d039aac416d8f7bb ""
   "images/CIGRE_network.png" 1561144594 278163 1e9bdf20766d0324179811b3fe04fa52 ""
   "images/conceptual_methodology.png" 1561144111 119953 430d20187ad7b79e92df2006ee650a1f ""
   "images/four_bus_system.png" 1561144615 93893 819e638ee1096345b346131524bda0f0 ""
-  "northeastern_paper_2.aux" 1561233906 4258 4b2c158b07a56f60211d607275cf2b6d ""
-  "northeastern_paper_2.tex" 1561164149 15205 b52ee445ccc96978fa591d1080299727 ""
+  "northeastern_paper_2.aux" 1562457912 3983 97c189c4edda13716deb2f532e98b1d4 ""
+  "northeastern_paper_2.tex" 1562353901 1842 a248e92749863bee817525f75c839d21 ""
   "results.tex" 1561228341 1791 6012ff608b26554ad0f46df742dc3319 ""
   (generated)
+  "northeastern_paper_2.log"
   "northeastern_paper_2.pdf"
   "Formulation.aux"
   "northeastern_paper_2.aux"
-  "northeastern_paper_2.log"
