@@ -8,7 +8,8 @@ print(pp.__version__)
 import matplotlib.pyplot as plt
 import ruptures as rpt
 from tqdm import tqdm
-
+# from julia.PowerModels import run_ac_opf
+# from julia.PowerModels import run_ac_opf
 
 def create_measurement_unit(df_measurement, net):
     list_value=[]
@@ -91,12 +92,12 @@ def create_measurement_unit(df_measurement, net):
 
 
 global upper_bus_accuracy, lower_bus_accuracy, upper_line_accuracy, lower_line_accuracy, upper_trafo_accuracy, lower_trafo_accuracy
-upper_bus_accuracy=1.03
-lower_bus_accuracy=0.97
-upper_line_accuracy=1.05
-lower_line_accuracy=0.95
-upper_trafo_accuracy=1.05
-lower_trafo_accuracy=0.95
+upper_bus_accuracy=1.01
+lower_bus_accuracy=0.99
+upper_line_accuracy=1.03
+lower_line_accuracy=0.97
+upper_trafo_accuracy=1.03
+lower_trafo_accuracy=0.97
 
 #modelling duck curve pattern for solar PV generation
 scaling_for_solar=np.array([0,0,0,0,0,0,0.02,0.1,0.3,0.5,0.7,0.8,0.8,1.0,1.0,0.8,0.7,0.4,0.2,0,0,0,0,0,0])
@@ -118,19 +119,27 @@ scaling_for_solar[0][800:805]=0.1
 scaling_for_solar[0][705:710]=0.1
 scaling_for_solar[0][677:682]=0.1
 
-
 list_PV_loc=[]
 list_PV_value=[]
 list_PV_detected_loc=[]
-list_PV_detected_value=[]
-for round in range(100):
+list_PV_detected_value_1=[]
+list_PV_detected_value_2=[]
+list_PV_detected_value_3=[]
+
+
+for round in tqdm(range(3), desc='round: '):
     p_mw=np.array([[0,0,0,0]])
-    pv_location=np.random.randint(2, size=2)
-#     list_PV_loc.append(pv_location)
-    print(pv_location)
+
+    pv_location=np.zeros(2, dtype='int')
+    while sum(pv_location) == 0:
+        pv_location=np.random.randint(2, size=2)
+#     pv_location=np.array([1,1])
+#     print(pv_location)#
+    list_PV_loc.append(pv_location)
     net = pn.simple_four_bus_system()
     net.sgen.p_mw=np.random.randint(50, size=2)/1000
-    print(net.sgen.p_mw)
+    list_PV_value.append(np.array(net.sgen.p_mw[:]))
+#     print(net.sgen.p_mw)
     net.sgen.q_mvar[:]=0
     for scaling_solar, load_scaling in zip(scaling_for_solar[0],scaling_for_load[0]):
         net.sgen.scaling=[scaling_solar*pv_location[0], scaling_solar*pv_location[1]]
@@ -154,7 +163,7 @@ for round in range(100):
         df['bus{}'.format(bus)]=p_mw[:,bus][1:][7*60:-5*60]
         corr=df['solar_irradiation'].corr(df['bus{}'.format(bus)])
         list_corr.append(corr)
-        print('correlation at bus {} is: {}'.format(bus, corr))
+#         print('correlation at bus {} is: {}'.format(bus, corr))
         if corr <-0.2:
             bus_has_solar_PV.append(bus)
     list_PV_detected_loc.append(bus_has_solar_PV)
@@ -167,13 +176,30 @@ for round in range(100):
 
     algo = rpt.Pelt(model='rbf', min_size=1, jump=1).fit(my_array[:])
     my_bkps = algo.predict(pen=1)
+    # display
+#     rpt.display(my_array, my_bkps)
+#     plt.show()
+    size_pv_1=[]
+    size_pv_2=[]
+    size_pv_3=[]
     for bus in bus_has_solar_PV:
         sum_value=np.array([])
-        size_pv=[]
         for period in my_bkps[:-1]:
             value=(p_mw[1:][:,bus][period-1]-p_mw[1:][:,bus][period])/(scaling_for_solar[0][period-1]-scaling_for_solar[0][period])
             if scaling_for_solar[0][period-1]-scaling_for_solar[0][period] !=0:
                 sum_value = np.append(sum_value, value)
-            size_pv.append(sum_value.sum()/len(sum_value))
-        print('bus :', bus, 'has solar PV size: ', sum_value.sum()/len(sum_value)*list_corr[bus])
-    list_PV_detected_value.append(size_pv)
+#             print(sum_value)
+        size_pv_1.append(sum_value.sum()/len(sum_value))
+#         print('bus :', bus, 'has solar PV size: ', size_pv_1)
+        size_pv_2.append(sum_value.sum()/len(sum_value)*list_corr[bus])
+#         print('bus :', bus, 'has solar PV size: ', size_pv_2)
+        mean = np.mean(sum_value, axis=0)
+        sd = np.std(sum_value, axis=0)
+        final_list = [x for x in sum_value if (x > mean - 2 * sd)]
+        final_list = [x for x in final_list if (x < mean + 2 * sd)]
+#         print(final_list)
+        size_pv_3.append(np.array(final_list).mean()*list_corr[bus])
+#         print('bus :', bus, 'has solar PV size: ', size_pv_3)
+    list_PV_detected_value_1.append(size_pv_1)
+    list_PV_detected_value_2.append(size_pv_2)
+    list_PV_detected_value_3.append(size_pv_3)
