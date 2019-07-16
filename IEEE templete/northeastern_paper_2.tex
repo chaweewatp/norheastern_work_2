@@ -9,7 +9,7 @@
 \usepackage{xcolor}
 
 \usepackage{multirow}
-
+\usepackage{float}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -49,12 +49,21 @@ email address}
 \maketitle
 
 \begin{abstract}
-% This document is a model and instructions for \LaTeX.
-% This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes,
-% or Math in Paper Title or Abstract.
+The number of large scale and rooftop scale solar photovoltaic (PV) systems in electricity grid is growing at exponential rate.
+Invisible solar PV refers to small-scale and rooftop solar sites in distribution system that are not mornitored by utilities.
+These invisible solar PV sites cause challenging to utilies and system operators.
+In this paper, a methodology is proposed to identify location and estimate installation capacity of solar PV sites.
+With measurement voltage at any buses and power flow in any lines, state estimation (SE) algorithm could find power consumption in any buses.
+The consumption are fed to find correlation with solar irradaiton data.
+Thus, the correlative between these data could locate the site of invisible solar PV sites.
+Futhermore, the change point method and proposed algorithm could estimate installation capacity of invisible solar PV sites.
+The proposed methodology is test in distribution system i.e, four bus system and CIGRE Medium voltage distribution network with PV and Wind DER with randomly invsisble solar PV sites location.
+The overall results of the study shows that the correlation between consumption and solar irradiation can perfectly identify invisible solar PV sites with $\text{F}_{1}$ score aboved 0.96 and Matthews correlation coefficient (MCC) score aboved 0.90.
+The installation capacity estimation performe good with mean absolute error (MAPE) below 17\%.
 \end{abstract}
 
 \begin{IEEEkeywords}
+  Solar photovoltaic, invisible solar PV site, Gaussian noise, state estimation, correlation, change point detection, Matthews correlation coefficient
 \end{IEEEkeywords}
 
 
@@ -67,5 +76,9 @@ Here is Conclusion.
 \section*{Acknowledgment}
 
 \input{References}
+
+
+
+
 
 \end{document}
